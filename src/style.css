@@ -1,4 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#burger {
+	transition: all .5s ease-in-out;
+}
+
+#burger::before, #burger::after {
+	content: '';
+	position: absolute;
+	height: 3px;
+	border-radius: 8px;
+	background-color: black;
+	transition: all .5s ease-in-out;
+  @apply w-6 after:bg-neutral-900 before:bg-neutral-900;
+}
+
+#burger::before {
+	transform: translateY(8px);
+}
+
+#burger::after {
+	transform: translateY(-8px);
+}
+
+/* ANIMATION */
+
+#menu-btn.open #burger{
+	transform: translateX(-50px);
+	background: transparent;
+}
+
+#menu-btn.open #burger::before {
+	transform: rotate(45deg) translate(35px, -35px);
+}
+
+#menu-btn.open #burger::after {
+	transform: rotate(-45deg) translate(35px, 35px);
+}
+

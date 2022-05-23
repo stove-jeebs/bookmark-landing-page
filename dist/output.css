@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
 /*
 ! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
@@ -484,16 +484,110 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.absolute{
+  position: absolute;
+}
+
+.left-6{
+  left: 1.5rem;
+}
+
+.right-6{
+  right: 1.5rem;
+}
+
 .mt-4{
   margin-top: 1rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
 }
 
 .flex{
   display: flex;
 }
 
+.hidden{
+  display: none;
+}
+
+.h-6{
+  height: 1.5rem;
+}
+
+.h-\[3px\]{
+  height: 3px;
+}
+
+.w-6{
+  width: 1.5rem;
+}
+
+.flex-1{
+  flex: 1 1 0%;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
 .items-center{
   align-items: center;
+}
+
+.justify-end{
+  justify-content: flex-end;
+}
+
+.gap-12{
+  gap: 3rem;
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.self-end{
+  align-self: flex-end;
+}
+
+.rounded-md{
+  border-radius: 0.375rem;
+}
+
+.rounded{
+  border-radius: 0.25rem;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
+.bg-bookmark-red{
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 89 89 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 229 229 / var(--tw-bg-opacity));
 }
 
 .py-4{
@@ -506,12 +600,125 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.25rem;
 }
 
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-7{
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .font-Poppins{
   font-family: Poppins, sans-serif;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.font-medium{
+  font-weight: 500;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.text-bookmark-blue{
+  --tw-text-opacity: 1;
+  color: rgb(36 42 69 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.drop-shadow-lg{
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.duration-500{
+  transition-duration: 500ms;
+}
+
+#burger {
+  transition: all .5s ease-in-out;
+}
+
+#burger::before, #burger::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  border-radius: 8px;
+  background-color: black;
+  transition: all .5s ease-in-out;
+  width: 1.5rem;
+}
+
+#burger::before::before, #burger::after::before{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+}
+
+#burger::before::after, #burger::after::after{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+}
+
+#burger::before {
+  transform: translateY(8px);
+}
+
+#burger::after {
+  transform: translateY(-8px);
+}
+
+/* ANIMATION */
+
+#menu-btn.open #burger{
+  transform: translateX(-50px);
+  background: transparent;
+}
+
+#menu-btn.open #burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+#menu-btn.open #burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
 }
 
 @media (min-width: 768px){
   .md\:mt-12{
     margin-top: 3rem;
   }
+
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:hidden{
+    display: none;
+  }
+
+  .md\:w-auto{
+    width: auto;
+  }
 }
+
