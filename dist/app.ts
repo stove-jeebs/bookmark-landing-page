@@ -23,7 +23,7 @@ menuBtn?.addEventListener("click", function () {
     isOpen = true;
   } else {
     logoText!.style.fill = "rgba(36, 42, 69, 0.9";
-    logoCircle!.style.fill = "#5267DF";
+    logoCircle!.style.fill = "rgba(36, 42, 69, 0.9)";
     logoPath!.style.fill = "white";
     isOpen = false;
   }
