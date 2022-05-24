@@ -2,7 +2,7 @@
 const menuBtn = document.querySelector("#menu-btn");
 const dropdown = document.querySelector("#dropdown");
 const navbar = document.querySelector("nav");
-const list = document.querySelector("#dropdown ul");
+const dropdownList = document.querySelector("#dropdown ul");
 const logoText = document.querySelector("#logo-text");
 const logoCircle = document.querySelector("#logo-circle");
 const logoPath = document.querySelector("#logo-path");
@@ -13,8 +13,8 @@ menuBtn === null || menuBtn === void 0 ? void 0 : menuBtn.addEventListener("clic
     dropdown === null || dropdown === void 0 ? void 0 : dropdown.classList.toggle("bg-translucent-blue");
     dropdown === null || dropdown === void 0 ? void 0 : dropdown.classList.toggle("h-0");
     dropdown === null || dropdown === void 0 ? void 0 : dropdown.classList.toggle("h-full");
-    list === null || list === void 0 ? void 0 : list.classList.toggle("hidden");
-    list === null || list === void 0 ? void 0 : list.classList.toggle("flex");
+    dropdownList === null || dropdownList === void 0 ? void 0 : dropdownList.classList.toggle("hidden");
+    dropdownList === null || dropdownList === void 0 ? void 0 : dropdownList.classList.toggle("flex");
     if (!isOpen) {
         logoText.style.fill = "white";
         logoCircle.style.fill = "white";

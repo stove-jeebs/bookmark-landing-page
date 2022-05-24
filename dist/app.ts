@@ -1,7 +1,7 @@
 const menuBtn = document.querySelector("#menu-btn") as HTMLButtonElement;
 const dropdown = document.querySelector("#dropdown") as HTMLDivElement;
 const navbar = document.querySelector("nav") as HTMLDivElement;
-const list = document.querySelector("#dropdown ul") as HTMLUListElement;
+const dropdownList = document.querySelector("#dropdown ul") as HTMLUListElement;
 const logoText = document.querySelector("#logo-text") as SVGPathElement;
 const logoCircle = document.querySelector("#logo-circle") as SVGCircleElement;
 const logoPath = document.querySelector("#logo-path") as SVGPathElement;
@@ -14,8 +14,8 @@ menuBtn?.addEventListener("click", function () {
   dropdown?.classList.toggle("bg-translucent-blue");
   dropdown?.classList.toggle("h-0");
   dropdown?.classList.toggle("h-full");
-  list?.classList.toggle("hidden");
-  list?.classList.toggle("flex");
+  dropdownList?.classList.toggle("hidden");
+  dropdownList?.classList.toggle("flex");
   if (!isOpen) {
     logoText!.style.fill = "white";
     logoCircle!.style.fill = "white";
