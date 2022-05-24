@@ -2,8 +2,8 @@
 	"name": "bookmark-landing-page",
 	"description": "a modern landing page",
 	"scripts": {
-		"build": "tailwindcss -i ./src/style.css -o ./dist/output.css",
-		"watch": "tailwindcss -i ./src/style.css -o ./dist/output.css --watch"
+		"build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+		"watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
 	},
 	"author": "Leo Ho",
   "devDependencies": {

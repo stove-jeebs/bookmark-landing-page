@@ -18,8 +18,12 @@ module.exports = {
         "bookmark-purple": "#5267DF",
         "bookmark-red": "#FA5959",
         "bookmark-blue": "#242A45",
+				"translucent-blue": "rgba(36, 42, 69, 0.9)",
         "bookmark-grey": "#9194A2",
         "bookmark-white": "#f7f7f7",
+			},
+			backgroundImage: {
+				"bookmark-logo": "url('../dist/images/logo-bookmark.svg')",
 			},
 		},
   },
