@@ -1,5 +1,13 @@
 module.exports = {
-  content: ["./index.html"],
+
+	/* IMPORTANT: not all the class of tailwind is loaded. tailwind scan the files and only loads
+	the classes which have been used in the files, therefore appending/toggling a unused class with
+	typescript/javascrpt will not work
+	SOLUTION: add all of the source files that contain tailwind class names under 'content' in tailwind.config.js
+	link: https://tailwindcss.com/docs/content-configuration
+	*/
+
+  content: ["./index.html", "./dist/*.js"],
   theme: {
     fontFamily: {
       Poppins: ["Poppins", "sans-serif"],
