@@ -13,7 +13,7 @@
   position: absolute;
   height: 3px;
   border-radius: 8px;
-  background-color: #242A45;
+  background-color: #242a45;
   transition: all 0.5s ease-in-out;
   @apply w-6;
 }
@@ -41,4 +41,18 @@
 #menu-btn.open #burger::after {
   transform: rotate(-45deg) translate(35px, 35px);
   background-color: white;
+}
+
+.btn {
+  @apply shadow-md py-3 px-4 border-2 rounded-md ease-in-out duration-200 font-semibold;
+}
+
+.btn-purple {
+  @apply bg-bookmark-purple border-bookmark-purple text-white hover:bg-white hover:text-bookmark-purple hover:border-bookmark-purple;
+  @apply active:bg-white active:text-bookmark-purple active:border-bookmark-purple;
+}
+
+.btn-white {
+  @apply bg-bookmark-white border-transparent text-bookmark-grey hover:border-bookmark-grey;
+  @apply active:border-bookmark-grey;
 }
