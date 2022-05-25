@@ -9,6 +9,8 @@ const main = document.querySelector("main");
 
 let isOpen = false;
 
+// menu button
+
 menuBtn?.addEventListener("click", function () {
   document.body.classList.toggle("overflow-hidden");
   menuBtn?.classList.toggle("open");
@@ -30,4 +32,27 @@ menuBtn?.addEventListener("click", function () {
     logoPath!.style.fill = "white";
     isOpen = false;
   }
+});
+
+// features tab
+
+const tabs = document.querySelectorAll("[data-tab-target]");
+const tabContents = document.querySelectorAll("[data-tab-content]");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = document.querySelector(tab.dataset.tabTarget);
+    tabContents.forEach((tabContent) => {
+      tabContent.classList.add("hidden");
+      tabContent.classList.remove("flex");
+    });
+    tabs.forEach((tab) => {
+      tab.classList.remove("text-bookmark-blue");
+      tab.classList.remove("md:border-b-4");
+    });
+    target.classList.remove("hidden");
+    target.classList.add("flex");
+    tab.classList.add("text-bookmark-blue");
+    tab.classList.add("md:border-b-4");
+  });
 });

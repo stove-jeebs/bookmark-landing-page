@@ -53,6 +53,6 @@
 }
 
 .btn-white {
-  @apply bg-bookmark-white border-transparent text-bookmark-grey hover:border-bookmark-grey;
+  @apply bg-bookmark-white border-transparent text-bookmark-grey hover:text-bookmark-blue hover:border-bookmark-grey;
   @apply active:border-bookmark-grey;
 }
