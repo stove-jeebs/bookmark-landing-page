@@ -13,9 +13,9 @@
   position: absolute;
   height: 3px;
   border-radius: 8px;
-  background-color: black;
+  background-color: #242A45;
   transition: all 0.5s ease-in-out;
-  @apply w-6 after:bg-neutral-900 before:bg-neutral-900;
+  @apply w-6;
 }
 
 #burger::before {

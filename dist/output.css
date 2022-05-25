@@ -484,8 +484,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.invisible{
-  visibility: hidden;
+.fixed{
+  position: fixed;
 }
 
 .absolute{
@@ -502,6 +502,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .left-0{
   left: 0px;
+}
+
+.z-50{
+  z-index: 50;
 }
 
 .mt-\[69px\]{
@@ -522,6 +526,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-\[20vh\]{
   margin-bottom: 20vh;
+}
+
+.mt-14{
+  margin-top: 3.5rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
 }
 
 .flex{
@@ -580,6 +592,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: column;
 }
 
+.flex-col-reverse{
+  flex-direction: column-reverse;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .items-center{
   align-items: center;
 }
@@ -604,8 +624,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 3.5rem;
 }
 
-.rounded{
-  border-radius: 0.25rem;
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .rounded-md{
@@ -635,9 +655,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(145 148 162 / var(--tw-border-opacity));
 }
 
-.bg-neutral-900{
+.bg-bookmark-blue{
   --tw-bg-opacity: 1;
-  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+  background-color: rgb(36 42 69 / var(--tw-bg-opacity));
 }
 
 .bg-bookmark-red{
@@ -698,6 +718,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-semibold{
   font-weight: 600;
 }
@@ -729,6 +759,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(247 247 247 / var(--tw-text-opacity));
 }
 
+.text-bookmark-grey{
+  --tw-text-opacity: 1;
+  color: rgb(145 148 162 / var(--tw-text-opacity));
+}
+
+.blur-\[1px\]{
+  --tw-blur: blur(1px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .duration-300{
   transition-duration: 300ms;
 }
@@ -755,21 +795,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: absolute;
   height: 3px;
   border-radius: 8px;
-  background-color: black;
+  background-color: #242A45;
   transition: all 0.5s ease-in-out;
   width: 1.5rem;
-}
-
-#burger::before::before, #burger::after::before{
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
-}
-
-#burger::before::after, #burger::after::after{
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
 }
 
 #burger::before {
@@ -812,6 +840,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(250 89 89 / var(--tw-text-opacity));
 }
 
+.active\:bg-white:active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.active\:text-translucent-blue:active{
+  color: rgba(36, 42, 69, 0.9);
+}
+
 @media (min-width: 768px){
   .md\:mt-6{
     margin-top: 1.5rem;
@@ -832,5 +869,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:bg-white{
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:mt-28{
+    margin-top: 7rem;
+  }
+
+  .lg\:flex-row{
+    flex-direction: row;
+  }
+
+  .lg\:items-start{
+    align-items: flex-start;
+  }
+
+  .lg\:text-left{
+    text-align: left;
+  }
+
+  .lg\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 }
