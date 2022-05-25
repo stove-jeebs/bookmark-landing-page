@@ -5,7 +5,7 @@
 -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -113,21 +113,21 @@
             <img
               src="./dist/images/illustration-hero.svg"
               alt="illustration-hero"
-              class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+              class="w-6/7 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
             />
           </div>
         </div>
 
         <!-- rounded rectangle -->
         <div
-          class="hidden md:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg:h-[15rem] lg:-bottom-28 lg:-right-36 xl:top-[10rem] xl:-right-[15rem] xl:w-30 xl:h-3/4"
+          class="bg-bookmark-purple rounded-l-full absolute w-full h-1/3 top-12 -right-20 md:h-80 md:w-2/4 md:top-32 md:right-80 lg:h-[15rem] lg:-bottom-28 lg:-right-36 xl:top-[10rem] xl:-right-[15rem] xl:w-30 xl:h-3/4"
         ></div>
       </section>
 
       <!-- features section -->
       <section id="features" class="bg-bookmark-white py-20 mt-20 lg:mt-60">
         <!-- heading -->
-        <div class="text-center sm:w-3/4 lg:w-5/12 mx-auto px-2">
+        <div class="text-center w-4/5 lg:w-5/12 mx-auto px-2">
           <h1 class="text-3xl text-bookmark-blue font-semibold">Features</h1>
           <p class="text-bookmark-grey mt-4">
             Our aim is to make it quick and easy for you to access your favourite websites. Your bookmark syncs between
@@ -152,32 +152,36 @@
           </ul>
 
           <!-- tab content -->
-          <div class="py-2 mt-8 text-center text-bookmark-blue">
-            <div id="bookmark">
-              <div><img src="./dist/images/illustration-features-tab-1.svg" alt="simple-bookmarking" /></div>
-              <div>
-                <h1>Bookmark in one click</h1>
-                <p>
+          <div class="container flex flex-col items-center md:flex-row py-2 mt-20 text-center md:text-left">
+            <div id="bookmark" class="flex flex-col md:flex-row items-center w-4/5 md:w-full md:gap-20">
+              <img src="./dist/images/illustration-features-tab-1.svg" alt="simple-bookmarking" />
+              <div class="mt-20">
+                <h1 class="mb-6 text-2xl font-semibold text-bookmark-blue">Bookmark in one click</h1>
+                <p class="text-bookmark-grey">
                   Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete
                   control over how you manage your favourite sites.
+                  <button class="btn btn-purple mt-4 w-40 hidden md:block">hello</button>
                 </p>
               </div>
             </div>
-            <div id="search">
-              <div><img src="./dist/images/illustration-features-tab-2.svg" alt="speedy-searching" /></div>
-              <div>
-                <h1>Intelligent Search</h1>
-                <p>
+            <div id="search" class="hidden flex-col md:flex-row items-center w-4/5 md:w-full md:gap-20">
+              <img src="./dist/images/illustration-features-tab-2.svg" alt="speedy-searching" />
+              <div class="mt-20">
+                <h1 class="mb-6 text-2xl font-semibold text-bookmark-blue">Intelligent Search</h1>
+                <p class="text-bookmark-grey">
                   Our powerful search feature will help you find saved sites in no time at all. No need to trawl through
                   all of your bookmarks.
                 </p>
               </div>
             </div>
-            <div id="share">
-              <div><img src="./dist/images/illustration-features-tab-3.svg" alt="easy-sharing" /></div>
-              <div>
-                <h1>Share Your Bookmarks</h1>
-                <p>Easily share your bookmarks and collections with others.</p>
+            <div id="share" class="hidden flex-col md:flex-row items-center w-4/5 md:w-full md:gap-20">
+              <img src="./dist/images/illustration-features-tab-3.svg" alt="easy-sharing" />
+              <div class="mt-20">
+                <h1 class="mb-6 text-2xl font-semibold text-bookmark-blue">Share Your Bookmarks</h1>
+                <p class="text-bookmark-grey">
+                  Easily share your bookmarks and collections with others. Create a shareable link that you can send at
+                  the click of a button.
+                </p>
               </div>
             </div>
           </div>
