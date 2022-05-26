@@ -1,11 +1,11 @@
 {
-	"name": "bookmark-landing-page",
-	"description": "a modern landing page",
-	"scripts": {
-		"build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
-		"watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
-	},
-	"author": "Leo Ho",
+  "name": "bookmark-landing-page",
+  "description": "a modern landing page",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "author": "Leo Ho",
   "devDependencies": {
     "tailwindcss": "^3.0.24"
   }
