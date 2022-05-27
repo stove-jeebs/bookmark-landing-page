@@ -49,10 +49,12 @@ tabs.forEach((tab) => {
     tabs.forEach((tab) => {
       tab.classList.remove("text-bookmark-blue");
       tab.classList.remove("md:border-b-4");
+      tab.firstElementChild?.classList.remove('border-b-4')
     });
     target.classList.remove("hidden");
     target.classList.add("flex");
     tab.classList.add("text-bookmark-blue");
     tab.classList.add("md:border-b-4");
+    tab.firstElementChild?.classList.add('border-b-4')
   });
 });

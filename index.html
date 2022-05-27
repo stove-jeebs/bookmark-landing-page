@@ -137,7 +137,8 @@
         </div>
 
         <!-- tab -->
-        <div class="py-2 mt-8 lg:mt-10 text-center text-bookmark-grey">
+        <div class="relative py-2 mt-8 lg:mt-10 text-center text-bookmark-grey">
+          <!-- tab list -->
           <ul
             class="flex flex-col mx-auto md:flex-row text-lg md:text-base w-5/6 max-w-3xl gap-4 md:gap-0 md:w-2/3 md:px-12 md:justify-center md:border-gray-300 md:border-b-2"
           >
@@ -184,11 +185,11 @@
             <div
               id="bookmark"
               data-tab-content
-              class="flex flex-col justify-center lg:flex-row items-center text-bookmark-blue w-4/5 md:w-full md:gap-20"
+              class="flex flex-col justify-center lg:flex-row items-center text-bookmark-blue w-4/5 md:w-full md:gap-20 z-10"
             >
               <img src="./dist/images/illustration-features-tab-1.svg" alt="simple-bookmarking" />
               <div class="mt-16 md:mt-0 flex flex-col items-center text-center lg:items-start lg:text-left">
-                <h1 class="mb-6 text-2xl font-semibold">Bookmark in one click</h1>
+                <h1 class="my-8 text-2xl font-semibold">Bookmark in one click</h1>
                 <p class="text-bookmark-grey max-w-xl">
                   Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete
                   control over how you manage your favourite sites.
@@ -201,11 +202,11 @@
             <div
               id="search"
               data-tab-content
-              class="hidden flex-col justify-center lg:flex-row items-center w-4/5 md:w-full md:gap-20"
+              class="hidden flex-col justify-center lg:flex-row items-center w-4/5 md:w-full md:gap-20 z-10"
             >
               <img src="./dist/images/illustration-features-tab-2.svg" alt="speedy-searching" />
               <div class="mt-16 md:mt-0 flex flex-col items-center text-center lg:items-start lg:text-left">
-                <h1 class="mb-6 text-2xl font-semibold text-bookmark-blue">Intelligent Search</h1>
+                <h1 class="mb-8 text-2xl font-semibold text-bookmark-blue">Intelligent Search</h1>
                 <p class="text-bookmark-grey max-w-xl">
                   Our powerful search feature will help you find saved sites in no time at all. No need to trawl through
                   all of your bookmarks.
@@ -218,11 +219,11 @@
             <div
               id="share"
               data-tab-content
-              class="hidden flex-col justify-center lg:flex-row items-center w-4/5 md:w-full md:gap-20"
+              class="hidden flex-col justify-center lg:flex-row items-center w-4/5 md:w-full md:gap-20 z-10"
             >
               <img src="./dist/images/illustration-features-tab-3.svg" alt="easy-sharing" />
               <div class="mt-16 md:mt-0 flex flex-col items-center text-center lg:items-start lg:text-left">
-                <h1 class="mb-6 text-2xl font-semibold text-bookmark-blue">Share Your Bookmarks</h1>
+                <h1 class="mb-8 text-2xl font-semibold text-bookmark-blue">Share Your Bookmarks</h1>
                 <p class="text-bookmark-grey max-w-xl">
                   Easily share your bookmarks and collections with others. Create a shareable link that you can send at
                   the click of a button.
@@ -231,6 +232,9 @@
               </div>
             </div>
           </div>
+
+          <!-- rounded rectangle -->
+          <div class="bg-bookmark-purple rounded-r-full absolute w-[65vw] h-[50vw] top-[43%] left-0 sm:h-[35%] md:h-2/5 md:top-[30%] lg:w-2/5 lg:h-3/5 lg:top-1/2"></div>
         </div>
       </section>
     </main>

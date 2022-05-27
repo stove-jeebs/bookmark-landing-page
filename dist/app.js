@@ -37,18 +37,22 @@ const tabs = document.querySelectorAll("[data-tab-target]");
 const tabContents = document.querySelectorAll("[data-tab-content]");
 tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
+        var _a;
         const target = document.querySelector(tab.dataset.tabTarget);
         tabContents.forEach((tabContent) => {
             tabContent.classList.add("hidden");
             tabContent.classList.remove("flex");
         });
         tabs.forEach((tab) => {
+            var _a;
             tab.classList.remove("text-bookmark-blue");
             tab.classList.remove("md:border-b-4");
+            (_a = tab.firstElementChild) === null || _a === void 0 ? void 0 : _a.classList.remove('border-b-4');
         });
         target.classList.remove("hidden");
         target.classList.add("flex");
         tab.classList.add("text-bookmark-blue");
         tab.classList.add("md:border-b-4");
+        (_a = tab.firstElementChild) === null || _a === void 0 ? void 0 : _a.classList.add('border-b-4');
     });
 });
