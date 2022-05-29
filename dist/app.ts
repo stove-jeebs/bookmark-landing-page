@@ -65,15 +65,10 @@ const dropdown = document.querySelectorAll(".dropdown") as NodeListOf<HTMLDivEle
 
 dropdown.forEach((faq) => {
   faq.addEventListener("click", () => {
-    dropdown.forEach((faq) => {
-      faq.nextElementSibling?.classList.add("h-0");
-      faq.nextElementSibling?.classList.add("scale-y-0");
-      faq.lastElementChild?.classList.remove("rotate-180");
-    });
-    if (faq.nextElementSibling?.classList.contains('h-0')) {
-      faq.nextElementSibling?.classList.remove("h-0");
-      faq.nextElementSibling?.classList.remove("scale-y-0");
-      faq.lastElementChild?.classList.add("rotate-180");
-    }
+    const arrow = faq.querySelector(".arrow") as SVGPathElement;
+    faq.nextElementSibling?.classList.toggle("h-0");
+    faq.nextElementSibling?.classList.toggle("scale-y-0");
+    faq.lastElementChild?.classList.toggle("rotate-180");
+    arrow.classList.toggle("stroke-bookmark-red");
   });
 });

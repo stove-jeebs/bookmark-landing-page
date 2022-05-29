@@ -60,17 +60,11 @@ tabs.forEach((tab) => {
 const dropdown = document.querySelectorAll(".dropdown");
 dropdown.forEach((faq) => {
     faq.addEventListener("click", () => {
-        var _a, _b, _c, _d;
-        dropdown.forEach((faq) => {
-            var _a, _b, _c;
-            (_a = faq.nextElementSibling) === null || _a === void 0 ? void 0 : _a.classList.add("h-0");
-            (_b = faq.nextElementSibling) === null || _b === void 0 ? void 0 : _b.classList.add("scale-y-0");
-            (_c = faq.lastElementChild) === null || _c === void 0 ? void 0 : _c.classList.remove("rotate-180");
-        });
-        if ((_a = faq.nextElementSibling) === null || _a === void 0 ? void 0 : _a.classList.contains('h-0')) {
-            (_b = faq.nextElementSibling) === null || _b === void 0 ? void 0 : _b.classList.remove("h-0");
-            (_c = faq.nextElementSibling) === null || _c === void 0 ? void 0 : _c.classList.remove("scale-y-0");
-            (_d = faq.lastElementChild) === null || _d === void 0 ? void 0 : _d.classList.add("rotate-180");
-        }
+        var _a, _b, _c;
+        const arrow = faq.querySelector(".arrow");
+        (_a = faq.nextElementSibling) === null || _a === void 0 ? void 0 : _a.classList.toggle("h-0");
+        (_b = faq.nextElementSibling) === null || _b === void 0 ? void 0 : _b.classList.toggle("scale-y-0");
+        (_c = faq.lastElementChild) === null || _c === void 0 ? void 0 : _c.classList.toggle("rotate-180");
+        arrow.classList.toggle("stroke-bookmark-red");
     });
 });
