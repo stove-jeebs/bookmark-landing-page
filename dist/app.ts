@@ -1,7 +1,7 @@
 const menuBtn = document.querySelector("#menu-btn") as HTMLButtonElement;
-const dropdown = document.querySelector("#dropdown") as HTMLDivElement;
+const menu = document.querySelector("#menu") as HTMLDivElement;
 const navbar = document.querySelector("nav") as HTMLDivElement;
-const dropdownList = document.querySelector("#dropdown ul") as HTMLUListElement;
+const dropdownList = document.querySelector("#menu ul") as HTMLUListElement;
 const logoText = document.querySelector("#logo-text") as SVGPathElement;
 const logoCircle = document.querySelector("#logo-circle") as SVGCircleElement;
 const logoPath = document.querySelector("#logo-path") as SVGPathElement;
@@ -15,9 +15,9 @@ menuBtn?.addEventListener("click", function () {
   document.body.classList.toggle("overflow-hidden");
   menuBtn?.classList.toggle("open");
   navbar?.classList.toggle("bg-translucent-blue");
-  dropdown?.classList.toggle("bg-translucent-blue");
-  dropdown?.classList.toggle("h-0");
-  dropdown?.classList.toggle("h-full");
+  menu?.classList.toggle("bg-translucent-blue");
+  menu?.classList.toggle("h-0");
+  menu?.classList.toggle("h-full");
   dropdownList?.classList.toggle("hidden");
   dropdownList?.classList.toggle("flex");
   main?.classList.toggle("blur-[1px]");
@@ -49,12 +49,31 @@ tabs.forEach((tab) => {
     tabs.forEach((tab) => {
       tab.classList.remove("text-bookmark-blue");
       tab.classList.remove("md:border-b-4");
-      tab.firstElementChild?.classList.remove('border-b-4')
+      tab.firstElementChild?.classList.remove("border-b-4");
     });
     target.classList.remove("hidden");
     target.classList.add("flex");
     tab.classList.add("text-bookmark-blue");
     tab.classList.add("md:border-b-4");
-    tab.firstElementChild?.classList.add('border-b-4')
+    tab.firstElementChild?.classList.add("border-b-4");
+  });
+});
+
+// FAQ dropdown
+
+const dropdown = document.querySelectorAll(".dropdown") as NodeListOf<HTMLDivElement>;
+
+dropdown.forEach((faq) => {
+  faq.addEventListener("click", () => {
+    dropdown.forEach((faq) => {
+      faq.nextElementSibling?.classList.add("h-0");
+      faq.nextElementSibling?.classList.add("scale-y-0");
+      faq.lastElementChild?.classList.remove("rotate-180");
+    });
+    if (faq.nextElementSibling?.classList.contains('h-0')) {
+      faq.nextElementSibling?.classList.remove("h-0");
+      faq.nextElementSibling?.classList.remove("scale-y-0");
+      faq.lastElementChild?.classList.add("rotate-180");
+    }
   });
 });

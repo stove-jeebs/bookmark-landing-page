@@ -18,6 +18,7 @@
   <body class="font-Poppins">
     <!-- header -->
     <header>
+      <!-- navbar -->
       <nav class="flex justify-center items-center pt-8 pb-3 md:container md:mt-6 ease-in-out duration-300 md:bg-white">
         <div class="flex w-[80vw] max-w-md md:max-w-none">
           <!-- logo -->
@@ -58,7 +59,7 @@
 
         <!-- mobile full screen dropdown menu -->
         <div
-          id="dropdown"
+          id="menu"
           class="absolute top-0 h-0 left-0 flex flex-col text-center mt-[69px] w-screen font-medium z-50 uppercase ease-in-out duration-300 md:hidden"
         >
           <!-- mobile nav links -->
@@ -260,7 +261,7 @@
         <!-- extentions -->
         <div class="flex flex-col items-center md:flex-row lg:my-20 md:justify-center lg:gap-12">
           <!-- chrome -->
-          <div class="flex flex-col items-center lg:self-start my-20 shadow-lg lg:m-0">
+          <div class="flex flex-col items-center lg:self-start my-14 md:my-20 shadow-lg lg:m-0">
             <img src="./dist/images/logo-chrome.svg" alt="chrome-image" />
             <h2 class="text-bookmark-blue mt-8 text-2xl font-semibold">Add to Chrome</h2>
             <p class="text-bookmark-grey">Minimum version 62</p>
@@ -269,18 +270,18 @@
           </div>
 
           <!-- firefox -->
-          <div class="flex flex-col items-center lg:self-center my-20 shadow-lg md:my-12">
+          <div class="flex flex-col items-center lg:self-center my-14 md:my-20 shadow-lg lg:my-12">
             <img src="./dist/images/logo-firefox.svg" alt="firefox-image" />
-            <h2 class="text-bookmark-blue mt-8 text-2xl font-semibold">Add to Chrome</h2>
+            <h2 class="text-bookmark-blue mt-8 text-2xl font-semibold">Add to Firefox</h2>
             <p class="text-bookmark-grey">Minimum version 55</p>
             <img src="./dist/images/bg-dots.svg" class="mt-12" alt="dotted-line" />
             <button type="button" class="btn btn-purple my-8"><a href="#">Add & Install Extension</a></button>
           </div>
 
           <!-- opera -->
-          <div class="flex flex-col items-center lg:self-end my-20 shadow-lg lg:m-0">
+          <div class="flex flex-col items-center lg:self-end my-14 md:my-20 shadow-lg lg:m-0">
             <img src="./dist/images/logo-opera.svg" alt="opera-image" />
-            <h2 class="text-bookmark-blue mt-8 text-2xl font-semibold">Add to Chrome</h2>
+            <h2 class="text-bookmark-blue mt-8 text-2xl font-semibold">Add to Opera</h2>
             <p class="text-bookmark-grey">Minimum version 46</p>
             <img src="./dist/images/bg-dots.svg" class="mt-12" alt="dotted-line" />
             <button type="button" class="btn btn-purple my-8"><a href="#">Add & Install Extension</a></button>
@@ -299,21 +300,71 @@
         </div>
 
         <!-- dropdown section -->
-        <div class="my-20">
+        <div class="my-20 container flex flex-col items-center">
           <!-- dropdown 1 -->
-          <div class="">
-            <div class="flex cursor-pointer items-center">
-              <h1 class="text-bookmark-blue flex-1 text-xl font-semibold">What is Bookmark?</h1>
-              <img class="w-5- h-4" src="./dist/images/icon-arrow.svg" alt="dropdown-arrow" />
+          <div class="max-w-4xl">
+            <div class="dropdown flex cursor-pointer items-center">
+              <h3 class="text-bookmark-blue flex-1 text-xl font-medium hover:text-bookmark-red">What is Bookmark?</h3>
+              <img class="w-5- h-4 ease-in-out duration-200" src="./dist/images/icon-arrow.svg" alt="dropdown-arrow" />
             </div>
-            <p class="text-bookmark-grey my-8 bg-bookmark-white">
+            <p
+              class="h-0 text-bookmark-grey my-8 bg-bookmark-white origin-top scale-y-0 overflow-hidden ease-in-out duration-200"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat, provident aliquid iure assumenda
               consequatur eum aut expedita eos repudiandae modi facere quo animi quis doloribus, porro tempore ad
               adipisci!
             </p>
           </div>
           <!-- dropdwon 2 -->
+          <div class="max-w-4xl">
+            <div class="dropdown flex cursor-pointer items-center">
+              <h3 class="text-bookmark-blue flex-1 text-xl font-medium hover:text-bookmark-red">
+                How can i request a new browser?
+              </h3>
+              <img class="w-5- h-4 ease-in-out duration-200" src="./dist/images/icon-arrow.svg" alt="dropdown-arrow" />
+            </div>
+            <p
+              class="h-0 text-bookmark-grey my-8 bg-bookmark-white origin-top scale-y-0 overflow-hidden ease-in-out duration-200"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat, provident aliquid iure assumenda
+              consequatur eum aut expedita eos repudiandae modi facere quo animi quis doloribus, porro tempore ad
+              adipisci!
+            </p>
+          </div>
+          <!-- dropdwon 3 -->
+          <div class="max-w-4xl">
+            <div class="dropdown flex cursor-pointer items-center">
+              <h3 class="text-bookmark-blue flex-1 text-xl font-medium hover:text-bookmark-red">
+                Is there a mobile app?
+              </h3>
+              <img class="w-5- h-4 ease-in-out duration-200" src="./dist/images/icon-arrow.svg" alt="dropdown-arrow" />
+            </div>
+            <p
+              class="h-0 text-bookmark-grey my-8 bg-bookmark-white origin-top scale-y-0 overflow-hidden ease-in-out duration-200"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat, provident aliquid iure assumenda
+              consequatur eum aut expedita eos repudiandae modi facere quo animi quis doloribus, porro tempore ad
+              adipisci!
+            </p>
+          </div>
+          <!-- dropdwon 4 -->
+          <div class="max-w-4xl">
+            <div class="dropdown flex cursor-pointer items-center">
+              <h3 class="text-bookmark-blue flex-1 text-xl font-medium hover:text-bookmark-red">
+                What about other Chromium browsers?
+              </h3>
+              <img class="w-5- h-4 ease-in-out duration-200" src="./dist/images/icon-arrow.svg" alt="dropdown-arrow" />
+            </div>
+            <p
+              class="h-0 text-bookmark-grey my-8 bg-bookmark-white origin-top scale-y-0 overflow-hidden ease-in-out duration-200"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat, provident aliquid iure assumenda
+              consequatur eum aut expedita eos repudiandae modi facere quo animi quis doloribus, porro tempore ad
+              adipisci!
+            </p>
+          </div>
         </div>
+        <button type="button" class="btn btn-purple -mt-14"><a href="#">More Info</a></button>
       </section>
     </main>
 
