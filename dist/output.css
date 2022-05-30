@@ -568,6 +568,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 5rem;
 }
 
+.mr-8{
+  margin-right: 2rem;
+}
+
 .mt-\[69px\]{
   margin-top: 69px;
 }
@@ -664,10 +668,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 50vw;
 }
 
-.h-4{
-  height: 1rem;
-}
-
 .h-full{
   height: 100%;
 }
@@ -678,6 +678,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-6{
   width: 1.5rem;
+}
+
+.w-28{
+  width: 7rem;
 }
 
 .w-screen{
@@ -704,16 +708,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 10rem;
 }
 
-.w-5{
-  width: 1.25rem;
-}
-
-.w-2{
-  width: 0.5rem;
-}
-
-.w-20{
-  width: 5rem;
+.w-32{
+  width: 8rem;
 }
 
 .max-w-md{
@@ -726,6 +722,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-xl{
   max-width: 36rem;
+}
+
+.max-w-2xl{
+  max-width: 42rem;
 }
 
 .max-w-4xl{
@@ -759,6 +759,10 @@ Ensure the default browser behavior of the `hidden` attribute.
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-col{
@@ -801,6 +805,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1rem;
 }
 
+.gap-8{
+  gap: 2rem;
+}
+
+.gap-10{
+  gap: 2.5rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -840,9 +852,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-width: 4px;
 }
 
-.border-bookmark-red{
-  --tw-border-opacity: 1;
-  border-color: rgb(250 89 89 / var(--tw-border-opacity));
+.border-b{
+  border-bottom-width: 1px;
 }
 
 .border-bookmark-grey{
@@ -860,14 +871,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
+.border-bookmark-red{
+  --tw-border-opacity: 1;
+  border-color: rgb(250 89 89 / var(--tw-border-opacity));
+}
+
 .bg-bookmark-blue{
   --tw-bg-opacity: 1;
   background-color: rgb(36 42 69 / var(--tw-bg-opacity));
-}
-
-.bg-bookmark-red{
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 89 89 / var(--tw-bg-opacity));
 }
 
 .bg-transparent{
@@ -888,27 +899,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgba(36, 42, 69, 0.9);
 }
 
-.fill-red-900{
-  fill: #7f1d1d;
+.bg-no-repeat{
+  background-repeat: no-repeat;
 }
 
 .stroke-bookmark-red{
   stroke: #FA5959;
 }
 
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .px-7{
@@ -934,6 +940,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pt-8{
@@ -1005,14 +1026,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.1em;
 }
 
+.tracking-\[5px\]{
+  letter-spacing: 5px;
+}
+
 .text-bookmark-blue{
   --tw-text-opacity: 1;
   color: rgb(36 42 69 / var(--tw-text-opacity));
-}
-
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-bookmark-white{
@@ -1020,9 +1040,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(247 247 247 / var(--tw-text-opacity));
 }
 
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .text-bookmark-grey{
   --tw-text-opacity: 1;
   color: rgb(145 148 162 / var(--tw-text-opacity));
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .shadow-lg{
@@ -1031,57 +1061,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .blur-\[1px\]{
   --tw-blur: blur(1px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.brightness-\[102\%\]{
-  --tw-brightness: brightness(102%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.contrast-\[96\%\]{
-  --tw-contrast: contrast(96%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.hue-rotate-\[326deg\]{
-  --tw-hue-rotate: hue-rotate(326deg);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.invert{
-  --tw-invert: invert(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.invert-\[52\%\]{
-  --tw-invert: invert(52%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.saturate-\[\]{
-  --tw-saturate: saturate();
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.saturate-\[2950\%\]{
-  --tw-saturate: saturate(2950%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.sepia{
-  --tw-sepia: sepia(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.sepia-\[30\%\]{
-  --tw-sepia: sepia(30%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.filter{
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -1145,13 +1131,20 @@ body {
   background-color: white;
 }
 
+.invalid-email {
+  background-image: url(../dist/images/icon-error.svg);
+  background-position: calc(100% - 10px);
+  --tw-border-opacity: 1;
+  border-color: rgb(250 89 89 / var(--tw-border-opacity));
+}
+
 .btn{
   border-radius: 0.375rem;
   border-width: 2px;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   font-weight: 600;
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -1212,14 +1205,58 @@ body {
   border-color: rgb(145 148 162 / var(--tw-border-opacity));
 }
 
-.hover\:border-bookmark-red:hover{
+.btn-red{
   --tw-border-opacity: 1;
   border-color: rgb(250 89 89 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 89 89 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:bg-white:hover{
+.btn-red:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(250 89 89 / var(--tw-text-opacity));
+}
+
+.btn-red:active{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(250 89 89 / var(--tw-text-opacity));
+}
+
+.placeholder\:italic::-moz-placeholder{
+  font-style: italic;
+}
+
+.placeholder\:italic:-ms-input-placeholder{
+  font-style: italic;
+}
+
+.placeholder\:italic::placeholder{
+  font-style: italic;
+}
+
+.placeholder\:text-red-900::-moz-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-red-900:-ms-input-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-red-900::placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity));
+}
+
+.hover\:fill-bookmark-red:hover{
+  fill: #FA5959;
 }
 
 .hover\:text-bookmark-red:hover{
@@ -1366,6 +1403,10 @@ body {
     flex-direction: row;
   }
 
+  .md\:justify-end{
+    justify-content: flex-end;
+  }
+
   .md\:justify-center{
     justify-content: center;
   }
@@ -1376,6 +1417,14 @@ body {
 
   .md\:gap-20{
     gap: 5rem;
+  }
+
+  .md\:gap-16{
+    gap: 4rem;
+  }
+
+  .md\:gap-4{
+    gap: 1rem;
   }
 
   .md\:border-0{
@@ -1470,6 +1519,14 @@ body {
 
   .lg\:mt-10{
     margin-top: 2.5rem;
+  }
+
+  .lg\:ml-8{
+    margin-left: 2rem;
+  }
+
+  .lg\:mr-8{
+    margin-right: 2rem;
   }
 
   .lg\:h-\[15rem\]{

@@ -60,11 +60,34 @@ tabs.forEach((tab) => {
 const dropdown = document.querySelectorAll(".dropdown");
 dropdown.forEach((faq) => {
     faq.addEventListener("click", () => {
-        var _a, _b, _c;
+        var _a, _b, _c, _d;
         const arrow = faq.querySelector(".arrow");
         (_a = faq.nextElementSibling) === null || _a === void 0 ? void 0 : _a.classList.toggle("h-0");
         (_b = faq.nextElementSibling) === null || _b === void 0 ? void 0 : _b.classList.toggle("scale-y-0");
-        (_c = faq.lastElementChild) === null || _c === void 0 ? void 0 : _c.classList.toggle("rotate-180");
+        (_c = faq.nextElementSibling) === null || _c === void 0 ? void 0 : _c.classList.toggle("mb-8");
+        (_d = faq.lastElementChild) === null || _d === void 0 ? void 0 : _d.classList.toggle("rotate-180");
         arrow.classList.toggle("stroke-bookmark-red");
     });
+});
+// email validation
+const email = document.querySelector("#email");
+const submit = document.querySelector("#submit");
+function ValidateEmail(mail) {
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
+        return true;
+    }
+    return false;
+}
+submit === null || submit === void 0 ? void 0 : submit.addEventListener("click", (event) => {
+    event.stopPropagation();
+    if (!ValidateEmail(email)) {
+        event.preventDefault();
+        email.classList.add("invalid-email");
+        email.classList.add("invalid-email");
+        email.classList.add("placeholder:text-red-900");
+    }
+});
+email.addEventListener("input", () => {
+    email.classList.remove("invalid-email");
+    email.classList.remove("placeholder:text-red-900");
 });

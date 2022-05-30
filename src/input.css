@@ -47,16 +47,27 @@ body {
   background-color: white;
 }
 
+.invalid-email {
+  background-image: url(../dist/images/icon-error.svg);
+  background-position: calc(100% - 10px);
+  @apply border-bookmark-red;
+}
+
 .btn {
-  @apply shadow-lg py-3 px-4 border-2 rounded-md ease-in-out md:duration-200 font-semibold;
+  @apply px-4 py-3 font-semibold ease-in-out border-2 rounded-md shadow-lg md:duration-200;
 }
 
 .btn-purple {
-  @apply bg-bookmark-purple border-bookmark-purple text-white hover:bg-white hover:text-bookmark-purple hover:border-bookmark-purple;
+  @apply text-white bg-bookmark-purple border-bookmark-purple hover:bg-white hover:text-bookmark-purple hover:border-bookmark-purple;
   @apply active:bg-white active:text-bookmark-purple active:border-bookmark-purple;
 }
 
 .btn-white {
-  @apply bg-bookmark-white border-transparent text-bookmark-grey hover:text-bookmark-blue hover:border-bookmark-grey;
+  @apply border-transparent bg-bookmark-white text-bookmark-grey hover:text-bookmark-blue hover:border-bookmark-grey;
   @apply active:border-bookmark-grey;
+}
+
+.btn-red {
+  @apply text-white border-bookmark-red bg-bookmark-red hover:text-bookmark-red hover:bg-white;
+  @apply active:text-bookmark-red active:bg-white;
 }

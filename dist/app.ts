@@ -68,7 +68,35 @@ dropdown.forEach((faq) => {
     const arrow = faq.querySelector(".arrow") as SVGPathElement;
     faq.nextElementSibling?.classList.toggle("h-0");
     faq.nextElementSibling?.classList.toggle("scale-y-0");
+    faq.nextElementSibling?.classList.toggle("mb-8");
     faq.lastElementChild?.classList.toggle("rotate-180");
     arrow.classList.toggle("stroke-bookmark-red");
   });
+});
+
+// email validation
+
+const email = document.querySelector("#email") as HTMLInputElement;
+const submit = document.querySelector("#submit") as HTMLButtonElement;
+
+function ValidateEmail(mail: HTMLInputElement) {
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
+    return true;
+  }
+  return false;
+}
+
+submit?.addEventListener("click", (event) => {
+  event.stopPropagation();
+  if (!ValidateEmail(email)) {
+    event.preventDefault();
+    email.classList.add("invalid-email");
+    email.classList.add("invalid-email");
+    email.classList.add("placeholder:text-red-900");
+  }
+});
+
+email.addEventListener("input", () => {
+  email.classList.remove("invalid-email");
+  email.classList.remove("placeholder:text-red-900");
 });
