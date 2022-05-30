@@ -568,6 +568,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 5rem;
 }
 
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-20{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
 .mr-8{
   margin-right: 2rem;
 }
@@ -710,6 +720,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-32{
   width: 8rem;
+}
+
+.w-1\/2{
+  width: 50%;
+}
+
+.w-4\/6{
+  width: 66.666667%;
+}
+
+.w-\[\]{
+  width: ;
 }
 
 .max-w-md{
